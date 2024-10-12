@@ -4,9 +4,10 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Student john = new Student("John", 75, 75, 90);
-        Console.WriteLine(john.TotalObtained());
-        Console.WriteLine(john.Percentage());
-        Console.WriteLine(john.PhysicsMarks);
+        Calculator calc = new Calculator(10, 94);
+        Console.WriteLine(calc.Add());
+        Console.WriteLine(calc.Subtract());
+        Console.WriteLine(calc.Multiply());
+        Console.WriteLine(calc.Divide());
     }
 }
