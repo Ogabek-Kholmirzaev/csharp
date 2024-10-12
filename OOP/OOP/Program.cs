@@ -4,10 +4,8 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        var vendingMachine = new VendingMachine(); //Object creation
+        VendingMachine vendy = new VendingMachine("Count: 45", "Capacity: 50", "Money Collected: 440$");
 
-        //Calling the members of the VendingMachine class
-        Console.WriteLine("The capacity of the machine is {0}", vendingMachine.Capacity);
-        vendingMachine.Display();
+        vendy.GetDetails();
     }
 }

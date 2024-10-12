@@ -1,27 +1,38 @@
 namespace OOP;
 
+// VendingMachine class
 class VendingMachine
 {
-    //Class fields
-    public int Count = 30;
-    public int Capacity = 100;
-    public int MoneyCollected = 300;
-    public string Manufacturer = "Vendy Inc.";
+    // Private Fields
+    private string _count;
+    private string _capacity;
+    private string _moneyCollected;
 
-
-    //Class Methods
-    public void Display()
+    // Default Constructor
+    public VendingMachine()
     {
-        Console.WriteLine("I am the Display method for displaying the menu!");
+        this._count = "";
+        this._capacity = "";
+        this._moneyCollected = "";
     }
 
-    public void DispenseProducts()
+    // Parameterized Constructor 1
+    public VendingMachine(string count, string capacity)
     {
-        Console.WriteLine("I am the DispenseProducts method for dispensing the products!");
+        this._count = count;
+        this._capacity = capacity;
     }
 
-    public void Refill()
+    // Parameterized Constructor 2
+    // Write your code to modify the below constructor 
+    public VendingMachine(string count, string capacity, string money) : this(count, capacity)
     {
-        Console.WriteLine("I am the Refill method for refilling the products!");
+        this._moneyCollected = money;
+    }
+
+    // Method to return vending machine details
+    public string GetDetails()
+    {
+        return this._count + ", " + this._capacity + ", " + this._moneyCollected;
     }
 }
