@@ -6,6 +6,6 @@ internal class Program
     {
         VendingMachine vendy = new VendingMachine("Count: 45", "Capacity: 50", "Money Collected: 440$");
 
-        vendy.GetDetails();
+        Console.WriteLine(vendy.GetDetails());
     }
 }
