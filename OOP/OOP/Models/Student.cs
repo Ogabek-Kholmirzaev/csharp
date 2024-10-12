@@ -1,4 +1,4 @@
-namespace OOP;
+namespace OOP.Models;
 
 class Student
 {

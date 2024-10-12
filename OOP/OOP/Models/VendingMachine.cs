@@ -1,4 +1,4 @@
-namespace OOP;
+namespace OOP.Models;
 
 // VendingMachine class
 class VendingMachine
@@ -11,28 +11,28 @@ class VendingMachine
     // Default Constructor
     public VendingMachine()
     {
-        this._count = "";
-        this._capacity = "";
-        this._moneyCollected = "";
+        _count = "";
+        _capacity = "";
+        _moneyCollected = "";
     }
 
     // Parameterized Constructor 1
     public VendingMachine(string count, string capacity)
     {
-        this._count = count;
-        this._capacity = capacity;
+        _count = count;
+        _capacity = capacity;
     }
 
     // Parameterized Constructor 2
     // Write your code to modify the below constructor 
     public VendingMachine(string count, string capacity, string money) : this(count, capacity)
     {
-        this._moneyCollected = money;
+        _moneyCollected = money;
     }
 
     // Method to return vending machine details
     public string GetDetails()
     {
-        return this._count + ", " + this._capacity + ", " + this._moneyCollected;
+        return _count + ", " + _capacity + ", " + _moneyCollected;
     }
 }
