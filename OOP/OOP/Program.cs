@@ -4,7 +4,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Beverage cola= new Beverage("RC Cola", 0.7, "8/12/2025", 0.35, "Cola"); //creation of beverage object
-        cola.BeverageDetails(); //calling method to print details
+        var cola = new Soda("CocaCola", 0.9, "12/12/2019", 0.35, "Cola", false, true); //creation of Soda Object
+        cola.SodaDetails(); //calling method to print details
     }
 }

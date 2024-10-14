@@ -18,6 +18,12 @@ public class Product
         _expiryDate = expiryDate;
     }
 
+    //getter for name
+    public string GetName()
+    {
+        return _name;
+    }
+
     //public method to print details
     public void PrintDetails()
     {

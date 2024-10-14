@@ -3,12 +3,13 @@ namespace OOP.Models;
 //dirived class beverage
 public class Beverage : Product
 {
+    //private fields: fields specific to the derived class
     private double _litres;
     private string _flavor;
 
     //parameterized constructor
     public Beverage(string name, double price, string expiryDate, double litres, string flavor)
-        : base(name, price, expiryDate)
+        : base(name, price, expiryDate) //calling parent class constructor
     {
         _litres = litres;
         _flavor = flavor;
