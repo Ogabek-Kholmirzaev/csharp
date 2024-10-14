@@ -1,34 +1,51 @@
-using System.Runtime.CompilerServices;
-
 namespace OOP.Models;
 
-//base class product
-public class Product
+// Base Class
+class Product
 {
-    //private fields: common attributes of all type of products
-    private string _name;
-    private double _price;
-    private string _expiryDate;
+    // Private Data Members
+    private string name;
+    private double price;
 
-    //parameterized constructor
-    public Product(string name, double price, string expiryDate)
+    // Getter Function
+    public string GetName(int liters)
     {
-        _name = name;
-        _price = price;
-        _expiryDate = expiryDate;
+        if (liters == 1)
+        {
+            this.name = "Cola";
+            return this.name;
+        }
+        else if (liters == 2)
+        {
+            this.name = "Fanta";
+            return this.name;
+        }
+        else if (liters == 3)
+        {
+            this.name = "Dew";
+            return this.name;
+        }
+        else return "";
     }
 
-    //getter for name
-    public string GetName()
+    // Getter Function
+    public double GetPrice(int liters)
     {
-        return _name;
-    }
-
-    //public method to print details
-    public void PrintDetails()
-    {
-        Console.WriteLine("Name: " + _name);
-        Console.WriteLine("Price: " + _price);
-        Console.WriteLine("Expiry Date: " + _expiryDate);
+        if (liters == 1)
+        {
+            this.price = 2;
+            return this.price;
+        }
+        else if (liters == 2)
+        {
+            this.price = 3.5;
+            return this.price;
+        }
+        else if (liters == 3)
+        {
+            this.price = 4;
+            return this.price;
+        }
+        else return 0;
     }
 }

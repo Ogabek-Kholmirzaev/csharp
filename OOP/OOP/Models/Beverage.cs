@@ -1,25 +1,17 @@
 namespace OOP.Models;
 
-//dirived class beverage
-public class Beverage : Product
-{
-    //private fields: fields specific to the derived class
-    private double _litres;
-    private string _flavor;
+// Derived Class
+class Beverage : Product
+{ 
+    public int Liters { get; set; } //  Liters of a Beverage
 
-    //parameterized constructor
-    public Beverage(string name, double price, string expiryDate, double litres, string flavor)
-        : base(name, price, expiryDate) //calling parent class constructor
-    {
-        _litres = litres;
-        _flavor = flavor;
-    }
+    // This function calls the Base class getters and prepends the values to the Litres
+    public string GetDetails()
+    { 
+        string details = $"{GetName(Liters)}, {GetPrice(Liters)}, {Liters}";
+        // write your code here
+        // Return format should be "name, price, liters"
 
-    public void BeverageDetails()
-    {//details of beverage
-        PrintDetails(); //calling inherited method from product class
-        //printing fields of this class 
-        Console.WriteLine("Litres: " + _litres);
-        Console.WriteLine("Flavor: " + _flavor);
+        return details;
     }
 }
