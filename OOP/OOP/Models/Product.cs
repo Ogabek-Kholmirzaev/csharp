@@ -1,51 +1,38 @@
 namespace OOP.Models;
 
-// Base Class
 class Product
 {
-    // Private Data Members
-    private string name;
-    private double price;
-
-    // Getter Function
-    public string GetName(int liters)
+    private string _name;
+    private double _purchasePrice;
+    
+    //parameterized Constructor
+    public Product(string name, double purchasePrice)
     {
-        if (liters == 1)
-        {
-            this.name = "Cola";
-            return this.name;
-        }
-        else if (liters == 2)
-        {
-            this.name = "Fanta";
-            return this.name;
-        }
-        else if (liters == 3)
-        {
-            this.name = "Dew";
-            return this.name;
-        }
-        else return "";
+        this._name = name;
+        this._purchasePrice = purchasePrice;
     }
 
-    // Getter Function
-    public double GetPrice(int liters)
+    //getter to access the name of product
+    public string GetName()
     {
-        if (liters == 1)
-        {
-            this.price = 2;
-            return this.price;
-        }
-        else if (liters == 2)
-        {
-            this.price = 3.5;
-            return this.price;
-        }
-        else if (liters == 3)
-        {
-            this.price = 4;
-            return this.price;
-        }
-        else return 0;
+        return this._name;
+    }
+
+    //getter to access the purchase price of products
+    public double GetPurchasePrice()
+    {
+        return this._purchasePrice;
+    }
+
+    //method GetPrice() to be re-implemented in the derived classes
+    public virtual double GetPrice()
+    {
+        return this._purchasePrice;
+    }
+
+    //method to print name and to be re-implemented in the derived classes for selling price
+    public virtual void PrintDetails()
+    {
+        Console.WriteLine("Selected Product's Name: " + this._name);
     }
 }

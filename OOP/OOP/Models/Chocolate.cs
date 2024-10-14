@@ -1,23 +1,26 @@
 namespace OOP.Models;
 
-// public class Chocolate : Product
-// { //inheriting Product
-//     //specifications of a chocolate
-//     private bool _isMilky;
-//     private double _grams;
+class Chocolate : Product
+{
+    private double _profit;
 
-//     //constructor
-//     public Chocolate(string name, double price, string expiryDate, double grams, bool isMilky)
-//         : base(name, price, expiryDate) //calling parent class constructor
-//     {
-//         _grams = grams; //a chocolate having caffeine will have true
-//         _isMilky = isMilky; //the weight of chocolate bar
-//     }
+    //parameterized Constructor
+    public Chocolate(string name, double price) : base(name, price)
+    {
+        this._profit = base.GetPurchasePrice() * 0.20; //20% of purchase price
+    }
 
-//     public void ChocolateDetails()
-//     {
-//         PrintDetails();
-//         Console.WriteLine("Is the {0} milky? {1}", GetName(), _isMilky);
-//         Console.WriteLine("The {0} bar wieghs: {1}g", GetName(), _grams);
-//     }
-// }
+    //public method to get selling price
+    public override double GetPrice()
+    {
+        //calculating selling price, Math.ceiling is just an ibuilt method to round off the price
+        return base.GetPurchasePrice() + (int)Math.Round(this._profit);
+    }
+
+    //public method to call the base method for name and print the selling price from this class
+    public override void PrintDetails()
+    {
+        base.PrintDetails();
+        Console.WriteLine("Selling price: {0}", this.GetPrice());
+    }
+}
