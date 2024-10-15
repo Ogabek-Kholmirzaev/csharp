@@ -1,26 +1,19 @@
-﻿using OOP.Models;
+﻿// Creating the objects
+using OOP.Models;
 
-internal class Program
-{
-    private static void Main(string[] args)
-    {
-        // Creating saving account object
-        Account SAccount = new SavingsAccount(5000);
+EDM cardVendy = new CardVendingMachine();  
+EDM cashVendy = new CashVendingMachine();
+EDM hybridVendy = new HybridVendingMachine();
 
-        SAccount.Deposit(1000);
-        SAccount.PrintBalance();
+cardVendy.Dispense();    // Calling methods from CardVendingMachine
+cardVendy.Transact();
 
-        SAccount.Withdraw(3000);
-        SAccount.PrintBalance();
+Console.WriteLine();
 
-        Console.WriteLine();
+cashVendy.Dispense();   // Calling methods from CashVendingMachine
+cashVendy.Transact();    
 
-        // Creating checking account object
-        Account CAccount = new CheckingAccount(5000);
-        CAccount.Deposit(1000);
-        CAccount.PrintBalance();
+Console.WriteLine();
 
-        CAccount.Withdraw(3000);
-        CAccount.PrintBalance();
-    }
-}
+hybridVendy.Dispense(); // Calling methods from HybridVendingMachine
+hybridVendy.Transact();
