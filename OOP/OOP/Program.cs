@@ -1,5 +1,7 @@
 ﻿using OOP.Models;
 
-RedBull redBull= new RedBull(5);
+Book book = new MyBook("Harry Poter", "J.k. Rowling", "100");
 
-redBull.PrintDetails();
+book.GetDetails();
+
+book.Name;
