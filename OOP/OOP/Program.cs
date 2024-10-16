@@ -1,11 +1,5 @@
-﻿//creating the objects
-using OOP.Models;
+﻿using OOP.Models;
 
-EDM cashvendy = new CashVendingMachine();
+RedBull redBull= new RedBull(5);
 
-cashvendy.Dispense(); //calling methods from CashVendingMachine
-cashvendy.Transact(true);
-
-Console.WriteLine();
-
-cashvendy.Transact(false);
+redBull.PrintDetails();
