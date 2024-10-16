@@ -7,7 +7,7 @@ abstract class EDM
         //parameter-less constructor
     }
 
-    public abstract void Transact();
+    public abstract void Transact(bool successful);
     
     public void Dispense()
     {
