@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators", "Operators\Oper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionStatements", "SelectionStatements\SelectionStatements.csproj", "{E91DDEB7-1BC0-4B54-A8B6-EED53A330815}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterationStatements", "IterationStatements\IterationStatements.csproj", "{A985539D-F6D9-4C86-90FE-A7D79302FFE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{E91DDEB7-1BC0-4B54-A8B6-EED53A330815}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E91DDEB7-1BC0-4B54-A8B6-EED53A330815}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E91DDEB7-1BC0-4B54-A8B6-EED53A330815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A985539D-F6D9-4C86-90FE-A7D79302FFE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A985539D-F6D9-4C86-90FE-A7D79302FFE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A985539D-F6D9-4C86-90FE-A7D79302FFE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A985539D-F6D9-4C86-90FE-A7D79302FFE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
