@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandlingExceptions", "Handl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overflow", "Overflow\Overflow.csproj", "{1474D194-4CBC-4CD0-8531-E5D616621241}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopLevelFunctions", "TopLevelFunctions\TopLevelFunctions.csproj", "{3E9CD885-CC02-40E3-9C03-522F6FA9DB3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +80,9 @@ Global
 		{1474D194-4CBC-4CD0-8531-E5D616621241}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1474D194-4CBC-4CD0-8531-E5D616621241}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1474D194-4CBC-4CD0-8531-E5D616621241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E9CD885-CC02-40E3-9C03-522F6FA9DB3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9CD885-CC02-40E3-9C03-522F6FA9DB3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9CD885-CC02-40E3-9C03-522F6FA9DB3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9CD885-CC02-40E3-9C03-522F6FA9DB3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
