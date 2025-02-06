@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overflow", "Overflow\Overfl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopLevelFunctions", "TopLevelFunctions\TopLevelFunctions.csproj", "{3E9CD885-CC02-40E3-9C03-522F6FA9DB3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WritingFunctions", "WritingFunctions\WritingFunctions.csproj", "{8135D95D-72D3-48DB-A7DF-CFD4FB4810E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,9 @@ Global
 		{3E9CD885-CC02-40E3-9C03-522F6FA9DB3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E9CD885-CC02-40E3-9C03-522F6FA9DB3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E9CD885-CC02-40E3-9C03-522F6FA9DB3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8135D95D-72D3-48DB-A7DF-CFD4FB4810E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8135D95D-72D3-48DB-A7DF-CFD4FB4810E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8135D95D-72D3-48DB-A7DF-CFD4FB4810E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8135D95D-72D3-48DB-A7DF-CFD4FB4810E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
